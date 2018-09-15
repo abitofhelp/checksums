@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Copyright (c) 2018 A Bit of Help, Inc. - All Rights Reserved, Worldwide.
-// Use of this source code is governed by a MIT license that can be found in the LICENSE file.
+// Use of this source code is governed by a BSD-style  license that can be found in the LICENSE file.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Implements the testing of different kinds of checksums, so performance can be evaluated.
-package checksum_test
+package checksums
 
 import (
 	"crypto/md5"
@@ -16,7 +16,7 @@ import (
 // Function BenchmarkMd5Checksum determines performance values for various
 // number of bytes using MD5.
 // Typical Results:
-//   pkg: github.com/abitofhelp/Checksums/checksum
+//   pkg: github.com/abitofhelp/checksums/checksum
 //   BenchmarkMd5Checksum/Testing_1_bytes-8         	10000000	       170 ns/op
 //   BenchmarkMd5Checksum/Testing_10_bytes-8        	10000000	       170 ns/op
 //   BenchmarkMd5Checksum/Testing_100_bytes-8       	 5000000	       285 ns/op

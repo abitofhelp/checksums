@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Copyright (c) 2018 A Bit of Help, Inc. - All Rights Reserved, Worldwide.
-// Use of this source code is governed by a MIT license that can be found in the LICENSE file.
+// Use of this source code is governed by a BSD-style  license that can be found in the LICENSE file.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Implements the testing of different kinds of checksums, so performance can be evaluated.
-package checksum_test
+package checksums
 
 import (
 	"crypto/rand"
@@ -16,7 +16,7 @@ import (
 // Function BenchmarkSha256Checksum determines performance values for various
 // number of bytes using SHA256.
 // Typical Results:
-//   pkg: github.com/abitofhelp/Checksums/checksum
+//   pkg: github.com/abitofhelp/checksums/checksum
 //   BenchmarkSha256Checksum/Testing_1_bytes-8         	 5000000	       282 ns/op
 //   BenchmarkSha256Checksum/Testing_10_bytes-8        	 5000000	       292 ns/op
 //   BenchmarkSha256Checksum/Testing_100_bytes-8       	 3000000	       487 ns/op
